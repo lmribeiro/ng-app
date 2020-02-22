@@ -1,0 +1,31 @@
+<section>
+    <div class="container">
+        <br/>
+		<div class="col-md-12">
+			<h1>Add Category</h1>
+		</div>
+		<div class="col-md-6">
+			<form #categoryForm="ngForm" (ngSubmit)="submit()">
+				<div class="form-group">
+					<label>Name</label>
+					<input type="text" class="form-control" [(ngModel)]="model.name" name="name" #name="ngModel" required>
+				</div>
+				<div class="form-group row">
+					<div class="col-md-12">
+						<label>Status</label>
+						<select [(ngModel)]="model.status" class="form-control" name="status" required>
+							<option *ngFor="let opt of statusOpt" [ngValue]="opt.key">{{opt.value}}</option>
+						</select>
+					</div>
+				</div>
+				<br/>
+				<div class="form-group row">
+					<div class="col-md-12">
+						<button class="btn outline block" [disabled]="!categoryForm.form.valid" type="submit">OK</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<br/>
+    </div>
+</section>

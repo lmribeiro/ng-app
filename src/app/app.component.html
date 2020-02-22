@@ -1,0 +1,15 @@
+<ng-progress [color]="'#8cc637'"></ng-progress>
+<div class="wrapper">
+
+	<app-header [fixed]="fixed" id="top"></app-header>
+
+	<router-outlet (activate)="onActivate($event)"></router-outlet>
+
+	<a pageScroll href="#top" id="scrollToTop" [hidden]="!scroller">
+		<button class="btn outline">
+			<i class="fa fa-arrow-up"></i>
+		</button>
+	</a>
+
+	<!-- <app-footer></app-footer> -->
+</div>

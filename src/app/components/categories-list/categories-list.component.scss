@@ -1,0 +1,50 @@
+@import '~sass/variables.scss';
+
+a,
+nav a:visited,
+a:link {
+    color: #444;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+#categories-list {
+    margin-top: 100px;
+    h3 {
+        font-size: 22px;
+        font-size: Time Burner;
+    }
+    p {
+        font-size: Time Burner;
+    }
+    .novelty {
+        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+        margin: 10px;
+        padding: 0;
+        height: 100%;
+        .bg-image {
+            height: 260px;
+            background-size: cover;
+            background-position: center center;
+        }
+        button {
+            float: right;
+            background: transparent;
+            color: map-get($colors,secondary);
+            border: none;
+            text-transform: lowercase;
+            font-size: 18px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        button:hover {
+            background: none;
+            color: map-get($colors,secondary);
+            opacity: 0.5;
+        }
+    }
+}

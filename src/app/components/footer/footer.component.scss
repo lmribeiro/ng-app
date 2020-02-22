@@ -1,0 +1,43 @@
+@import '~sass/variables.scss';
+
+footer {
+	padding-left: 50px !important;
+	padding-right: 50px !important;
+
+	a {
+		font-family: Time Burner;
+
+		&:hover {
+			color: map-get($colors,secondary);
+			i {
+				color: map-get($colors,secondary);
+			}
+		}
+	}
+
+	i {
+		color: white;
+	}
+
+	img {
+		width: 100%;
+		max-width: 180px;
+	}
+}
+
+@media (min-width: 1340px) {
+	footer {
+		.flex-column .nav-link {
+			font-size: 20px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+
+		i {
+			font-size: 20px;
+		}
+	
+	}
+}

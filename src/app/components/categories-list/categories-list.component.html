@@ -1,0 +1,44 @@
+<div class="row" *ngIf="categories" id="categories-list">
+	<div class="col-md-12" style="border-bottom: 1px solid; margin-bottom: 20px;">
+		<div class="row">
+			<div class="col-3">
+				<p><b>Name</b></p>
+			</div>
+			<div class="col-3">
+				<p><b>Status</b></p>
+			</div>
+			<div class="col-3">
+				<p><b>Date</b></p>
+			</div>
+			<div class="col-3">
+				<p class="text-center"><b>Actions</b></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-12" *ngFor="let category of categories">
+		<div class="row" style="border-bottom: 1px solid #f1f1f1; margin-bottom: 10px;">
+			<div class="col-3">
+				<p>{{category.name}}</p>
+			</div>
+			<div class="col-3">
+				<p>{{category.status | status }}</p>
+			</div>
+			<div class="col-3">
+				<p>{{category.createdAt | date: 'dd/MM/yyyy'}}</p>
+			</div>
+			<div class="col-3 text-center" style="margin-bottom: 10px;">
+				<a [routerLink]="['/category/'+ category.id]" class="btn outline">
+					<i class="fa fa-eye"></i>
+				</a>&nbsp;
+				<a [routerLink]="['/edit/' + category.id]" class="btn outline">
+					<i class="fa fa-edit"></i>
+				</a>&nbsp;
+				<button (click) = "delete(category.id)" class="btn outline">
+					<i class="fa fa-trash-alt"></i>
+				 </button>
+			</div>
+		</div>
+	</div>
+
+</div>

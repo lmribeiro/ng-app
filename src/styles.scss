@@ -1,0 +1,324 @@
+@import "assets/vendor/bootstrap/css/bootstrap.min.css";
+@import "assets/vendor/froala/style.css";
+@import "sass/variables.scss";
+@import "sass/fonts.scss";
+// @import "~ngx-toastr/toastr-bs4-alert";
+@import "~ngx-toastr/toastr.css";
+
+body,
+html {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+* {
+	font-family: FuturaPT;
+}
+
+a,
+button,
+input.submit,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="image"],
+.animationcss,
+*::before,
+*::after,
+span,
+input,
+textarea,
+img,
+label {
+	-webkit-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+a {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+a:hover {
+	color: map-get($colors, secondary);
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1 {
+	color: map-get($colors, primary);
+	font-family: Time Burner;
+	font-size: 250%;
+}
+
+h2,
+h3 {
+	color: map-get($colors, primary);
+	font-family: Time Burner;
+	font-weight: lighter;
+}
+
+.fdb-block h3 {
+	font-size: 1.75rem;
+}
+
+section.fdb-block.no-subheader {
+	padding-top: 80px;
+	margin-top: 20px;
+}
+
+p {
+	font-size: 18px;
+}
+
+body,
+input[text],
+button {
+	color: #888;
+	font-family: FuturaPT;
+}
+button,
+.btn {
+	font-family: Time Burner;
+	letter-spacing: 2.5px;
+	font-weight: normal;
+}
+.btn.outline.white {
+	color: white;
+	border-color: white;
+}
+.btn.outline.--success {
+	color: map-get($colors, secondary);
+	border-color: map-get($colors, secondary);
+}
+.btn.outline.--success:hover {
+	background: map-get($colors, secondary);
+}
+.btn.outline:hover {
+	background: #444;
+	color: white;
+}
+.btn.outline.block {
+	width: 100%;
+}
+.btn.transparent {
+	background: transparent;
+	color: rgba(0, 0, 0, 0.5);
+	border: none;
+	display: block;
+	margin: auto;
+}
+a {
+	cursor: pointer;
+	cursor: hand;
+}
+button {
+	font-family: Time Burner;
+	background-color: #eee;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+	cursor: hand;
+}
+button:hover {
+	background-color: #cfd8dc;
+}
+button:disabled {
+	background-color: #eee;
+	color: #aaa;
+	cursor: auto;
+}
+
+.icon-dots {
+	font-size: 6px;
+	display: block;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+h3 + .icon-dots {
+	text-align: left;
+}
+
+.price,
+h4.price {
+	font-family: Time Burner;
+	color: map-get($colors, secondary);
+	font-size: 20px;
+}
+
+.timepicker button,
+.ngb-dp-header button {
+	background: transparent !important;
+	border: none !important;
+	color: black;
+}
+
+.ngb-dp-months .bg-primary {
+	background-color: #444 !important;
+}
+
+.ngb-dp-months .ngb-dp-weekday {
+	color: #444 !important;
+}
+
+.timepicker button:hover,
+.ngb-dp-header button {
+	color: black;
+	border-color: white;
+	opacity: 0.5;
+}
+
+.timepicker input {
+	width: 100% !important;
+}
+
+.page-item.active .page-link {
+	background-color: map-get($colors, secondary) !important;
+	border-color: map-get($colors, secondary) !important;
+	color: white !important;
+}
+.page-link {
+	color: map-get($colors, primary) !important;
+}
+
+.page-link:focus {
+	box-shadow: none !important;
+}
+
+/* UTILS */
+
+.--no-padding-right {
+	padding-right: 0;
+}
+.--no-padding-left {
+	padding-left: 0;
+}
+.--no-padding-top {
+	padding-top: 0;
+}
+.--no-padding-bottom {
+	padding-bottom: 0;
+}
+.--no-padding {
+	padding: 0;
+}
+
+/* SCROLL TO TOP */
+
+#scrollToTop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1500;
+}
+
+#scrollToTop button {
+	background: #444;
+	border-color: white;
+	color: white;
+	padding: 0;
+	height: 50px;
+	width: 50px;
+}
+
+.alert-dismissible .close:hover {
+	opacity: 0.1;
+}
+
+
+.progress .progress-bar.bg-success {
+	background: map-get($colors, secondary) !important;
+}
+
+.carousel:focus {
+	outline: none !important;
+}
+
+.tile {
+	box-shadow: none !important;
+}
+
+/* MODALS */
+
+.modal-title {
+	font-size: 1.75rem;
+	margin-bottom: 10px;
+	color: #1a1a1a;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before,
+.custom-control-input:checked ~ .custom-control-label::before {
+	background: map-get($colors, secondary);
+}
+
+@media (max-width: 760px) {
+	.modal-dialog {
+		margin: auto;
+	}
+	.modal-content {
+		min-height: 100vh;
+		border: 0;
+		border-radius: 0;
+		.p-5 {
+			padding: 10px !important;
+		}
+	}
+	.modal-body {
+		padding: 0 !important;
+		.fdb-box.p-5 {
+			padding: 20px !important;
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+}
+
+@media (min-width: 1140px) {
+}
+
+@media (min-width: 1340px) {
+}
+
+.toast-container.toast-bottom-center .toast {
+	width: 40%;
+	font-size: 20px;
+	background-image: none !important;
+	padding: 8px !important;
+	text-align: center;
+}
+
+.toast-close-button {
+	top: 0;
+	color: map-get($colors, primary);
+}
+
+.toast-container .toast,
+.toast {
+	background: white;
+	color: map-get($colors, primary);
+}
+
+@media (max-width: 767px) {
+	.toast-container.toast-bottom-center .toast {
+		width: 80%;
+	}
+}
+
+.toast-success {
+	background:  map-get($colors, secondary)!important;
+	color: #fff !important;
+}
+.toast-error {
+	background:  map-get($colors, danger)!important;
+	color: #fff !important;
+}

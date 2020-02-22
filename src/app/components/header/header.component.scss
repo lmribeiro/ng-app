@@ -1,0 +1,104 @@
+@import '~sass/variables.scss';
+
+.navbar {
+	padding: 16px !important;
+	box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+	min-height: 89px;
+
+	.nav-link {
+		font-family: Time Burner;
+	}
+
+	.nav-item.cart .nav-link {
+		font-family: FuturaPT;
+	}
+
+	.nav-link:focus, .nav-link:hover {
+		color: map-get($colors,secondary);
+	}
+
+	.active>.nav-link, .nav-link.active, .nav-link.show, .show>.nav-link {
+		color: map-get($colors,secondary);
+	}
+
+	img {
+		width: 140px;
+	}
+}
+
+@media (min-width: 760px) {
+	.navbar {
+		padding-left: 50px !important;
+		padding-right: 50px !important;
+		
+		.nav-link {
+			font-size: 17px;
+			padding-left: 0.2rem;
+			padding-right: 0.2rem;
+		}
+
+		.btn.outline {
+			font-size: 12px;
+			padding: 9px;
+			letter-spacing: 1.5px;
+		}
+
+		img {
+			width: 90px;
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.navbar {
+		.nav-link {
+			font-size: 18px;
+			padding-left: 0.7rem;
+			padding-right: 0.7rem;
+		}
+
+		.btn.outline {
+			font-size: 16px;
+			padding: 9px;
+			letter-spacing: 2.5px;
+		}
+
+		img {
+			width: 90px;
+		}
+	}
+}
+
+@media (min-width: 1140px) {
+	.navbar {
+		.nav-link {
+			font-size: 20px;
+			padding-left: 0.7rem;
+			padding-right: 0.7rem;
+		}
+
+		.btn.outline {
+			font-size: 16px;
+			padding: 9px 26px;
+			letter-spacing: 2.5px;
+		}
+
+		img {
+			width: 120px;
+		}
+	}
+}
+
+@media (min-width: 1340px) {
+	.navbar {
+		.nav-link {
+			font-size: 22px;
+			padding-left: 1.2rem;
+			padding-right: 1.2rem;
+		}
+	
+		img {
+			width: 140px;
+		}
+	}
+}

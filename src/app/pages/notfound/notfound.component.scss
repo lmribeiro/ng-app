@@ -1,0 +1,69 @@
+#notfound {
+    height: 100vh;
+    text-align: center;
+    background-size: cover;
+    background-position: 70%;
+    &:before {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .fdb-block .fdb-box {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        p,
+        h1 {
+            color: white;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 28px;
+            font-family: Time Burner;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+	.fdb-block .fdb-box {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+	.fdb-block .fdb-box {
+        h1 {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+	.fdb-block .fdb-box {
+        padding: 60px 0px;
+        h1 {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.fdb-block .fdb-box {
+    margin-top: calc((100vh/2) - 250px);
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    h1 {
+        font-weight: bold;
+        color: white;
+    }
+}

@@ -1,0 +1,26 @@
+@import '~sass/variables.scss';
+
+.leftRs, .rightRs {
+    display: inline-block !important;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	font-size: 40px;
+	color: map-get($colors,primary);
+	background: transparent;
+	&:hover {
+		color: map-get($colors,secondary);
+	}
+}
+
+.rightRs {
+	margin-left: 60px;
+}
+
+.leftRs:focus, .rightRs:focus {
+	outline: none;
+}
+
+ngu-carousel {
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+<section>
+	<div class="container" *ngIf="category">
+		<br>
+		<div class="row">
+			<div class="col-md-12">
+			<div class="row">
+			<div class="col-md-6">
+				<h3>{{category.name}}</h3>
+			</div>
+			<div class="col-md-6  text-right">
+				<a [routerLink]="['/edit/' + category.id]" class="btn outline">
+					<i class="fa fa-edit"></i>
+				</a>&nbsp;
+				<button (click) = "delete(category.id)" class="btn outline">
+					<i class="fa fa-trash-alt"></i>
+				 </button>
+			</div>
+			</div>
+			</div>
+			<div class="col-md-12">
+				<p><b>Status:</b> {{category.status | status}}</p>
+				<p><b>Date:</b> {{category.createdAt}}</p>
+			</div>
+		</div>
+	</div>
+</section>

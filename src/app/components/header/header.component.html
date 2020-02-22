@@ -1,0 +1,22 @@
+<header class="navbar navbar-light navbar-expand-md no-gutters" id="header" #header [hidden]="!show">
+	<div class="col-3 text-right">
+		<h1>
+			<a class="" [routerLink]="['/']" pageScroll href="#top" (click)="collapsed = true">
+				NG APP
+			</a>
+		</h1>
+	</div>
+
+	<button class="navbar-toggler navbar-toggler-right" type="button" (click)="collapsed = !collapsed" [attr.aria-expanded]="!collapsed"
+	 aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="navbar-collapse justify-content-end col-md-7	" [ngbCollapse]="collapsed" id="navbarContent">
+		<ul class="navbar-nav justify-content-center">
+			<li class="nav-item" [routerLinkActive]="['active']" *ngFor="let item of nav">
+				<a class="nav-link" routerLink="{{item.link}}" (click)="collapsed = true">{{item.name}}</a>
+			</li>
+		</ul>
+	</div>
+</header>
