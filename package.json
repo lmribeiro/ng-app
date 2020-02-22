@@ -50,7 +50,7 @@
     "ngx-page-scroll": "^5.0.1",
     "ngx-store": "^2.1.0",
     "ngx-toastr": "^9.1.1",
-    "npm": "^5.6.0",
+    "npm": "^6.13.4",
     "rxjs": "^6.3.3",
     "tslib": "^1.9.0",
     "web-animations-js": "^2.3.1",
