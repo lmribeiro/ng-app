@@ -2,7 +2,7 @@
 NG App
 ==================================================
 
-A simple cliente for the [zf-app]([https://github.com/lmribeiro/zf-app](https://github.com/lmribeiro/zf-app)) made with Angular.
+A simple cliente for the [zf-app](https://github.com/lmribeiro/zf-app) made with Angular.
 
 ## Installation
 
