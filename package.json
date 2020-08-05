@@ -30,7 +30,7 @@
     "@ng-bootstrap/ng-bootstrap": "^4.1.0",
     "@ngu/carousel": "1.5.3",
     "@ngui/auto-complete": "^2.0.0",
-    "@ngx-progressbar/core": "^5.2.1",
+    "@ngx-progressbar/core": "^5.3.2",
     "@ngx-progressbar/http": "^5.2.1",
     "@ngx-translate/core": "^11.0.1",
     "@ngx-translate/http-loader": "^4.0.0",
